@@ -1,16 +1,24 @@
-[![Movie Sentiment Analyzer](https://img.shields.io/badge/🎬-Movie%20Sentiment%20Analyzer-8b5cf6?style=for-the-badge)](https://github.com/Wilayat-1472/movie-sentiment-analyzer)
+<p align="center">
+  <a href="https://github.com/Wilayat-1472/movie-sentiment-analyzer">
+    <img src="https://img.shields.io/badge/🎬-Movie%20Sentiment%20Analyzer-8b5cf6?style=for-the-badge" alt="Movie Sentiment Analyzer">
+  </a>
+</p>
 
-# Movie Sentiment Analyzer
+<p align="center">
+  <em>AI-powered sentiment analysis for movie reviews using LSTM and SimpleRNN deep learning models trained on the IMDB 50K dataset via Google Colab (T4 GPU).</em>
+</p>
 
-*AI-powered sentiment analysis for movie reviews using LSTM and SimpleRNN deep learning models trained on the IMDB 50K dataset via Google Colab (T4 GPU).*
+<p align="center">
+  <a href="https://python.org"><img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"></a>
+  <a href="https://fastapi.tiangolo.com"><img src="https://img.shields.io/badge/FastAPI-0.100%2B-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI"></a>
+  <a href="https://streamlit.io"><img src="https://img.shields.io/badge/Streamlit-1.30%2B-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit"></a>
+  <a href="https://tensorflow.org"><img src="https://img.shields.io/badge/TensorFlow-2.15%2B-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow"></a>
+  <a href="https://colab.research.google.com"><img src="https://img.shields.io/badge/Google%20Colab-T4%20GPU-F37626?style=for-the-badge&logo=googlecolab&logoColor=white" alt="Google Colab"></a>
+</p>
 
-[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.100%2B-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
-[![Streamlit](https://img.shields.io/badge/Streamlit-1.30%2B-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io)
-[![TensorFlow](https://img.shields.io/badge/TensorFlow-2.15%2B-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)](https://tensorflow.org)
-[![Google Colab](https://img.shields.io/badge/Google%20Colab-T4%20GPU-F37626?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com)
-
-[Overview](#-overview) • [Pipeline](#-pipeline) • [Quick Start](#-quick-start) • [API Reference](#-api-reference) • [Model Performance](#-model-performance) • [Training Details](#-training-details)
+<p align="center">
+  <a href="#-overview">Overview</a> • <a href="#-pipeline">Pipeline</a> • <a href="#-quick-start">Quick Start</a> • <a href="#-api-reference">API Reference</a> • <a href="#-model-performance">Model Performance</a> • <a href="#-training-details">Training Details</a>
+</p>
 
 ---
 
@@ -296,4 +304,6 @@ This project is licensed under the **MIT License**.
 
 ---
 
-**Built with TensorFlow, FastAPI & Streamlit — trained on Google Colab T4 GPU**
+<p align="center">
+  Built with TensorFlow, FastAPI & Streamlit — trained on Google Colab T4 GPU
+</p>
