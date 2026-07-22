@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/Wilayat-1472/movie-sentiment-analyzer">
-    <span style="font-size: 4rem;">🎬</span>
+    <span style="font-size: 8rem;">🎬</span>
   </a>
 </p>
 
