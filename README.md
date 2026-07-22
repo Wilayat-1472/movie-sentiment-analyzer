@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/Wilayat-1472/movie-sentiment-analyzer">
-    <img src="https://img.shields.io/badge/🎬-8b5cf6?style=for-the-badge&logo=&logoColor=white" alt="" width="120">
+    <span style="font-size: 4rem;">🎬</span>
   </a>
 </p>
 
