@@ -1,8 +1,8 @@
 <p align="center">
-  <a href="https://github.com/Wilayat-1472/movie-sentiment-analyzer">
-    <img src="https://img.shields.io/badge/🎬-Movie%20Sentiment%20Analyzer-8b5cf6?style=for-the-badge" alt="Movie Sentiment Analyzer">
-  </a>
+  <a href="https://github.com/Wilayat-1472/movie-sentiment-analyzer">🎬</a>
 </p>
+
+# Movie Sentiment Analyzer
 
 <p align="center">
   <em>AI-powered sentiment analysis for movie reviews using LSTM and SimpleRNN deep learning models trained on the IMDB 50K dataset via Google Colab (T4 GPU).</em>
