@@ -1,5 +1,7 @@
 [![Movie Sentiment Analyzer](https://img.shields.io/badge/🎬-Movie%20Sentiment%20Analyzer-8b5cf6?style=for-the-badge)](https://github.com/Wilayat-1472/movie-sentiment-analyzer)
 
+# Movie Sentiment Analyzer
+
 *AI-powered sentiment analysis for movie reviews using LSTM and SimpleRNN deep learning models trained on the IMDB 50K dataset via Google Colab (T4 GPU).*
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
@@ -8,13 +10,13 @@
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.15%2B-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)](https://tensorflow.org)
 [![Google Colab](https://img.shields.io/badge/Google%20Colab-T4%20GPU-F37626?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com)
 
-[Overview](#-overview) • [Pipeline](#-pipeline) • [Quick Start](#-quick-start) • [API Reference](#-api-reference) • [Model Performance](#-model-performance) • [Training Details](#-training-details) • [Tech Stack](#-tech-stack)
+[Overview](#-overview) • [Pipeline](#-pipeline) • [Quick Start](#-quick-start) • [API Reference](#-api-reference) • [Model Performance](#-model-performance) • [Training Details](#-training-details)
 
 ---
 
-## Overview
+## 📋 Overview
 
-A production-grade sentiment analysis system that classifies movie reviews as **positive** or **negative** using two neural architectures. The backend is served via FastAPI with a Streamlit frontend for interactive analysis.
+A production-grade sentiment analysis system that classifies movie reviews as **positive** or **negative** using two neural architectures trained on the IMDB 50K dataset via **Google Colab (T4 GPU)**.
 
 | Capability | Detail |
 |---|---|
@@ -28,7 +30,7 @@ A production-grade sentiment analysis system that classifies movie reviews as **
 
 ---
 
-## Pipeline
+## 🔬 Pipeline
 
 The preprocessing pipeline mirrors the training notebook **exactly** to ensure inference matches training:
 
@@ -47,9 +49,31 @@ preprocess_text() → model.predict() → argmax + confidence →
 JSON Response → Animated Result Card
 ```
 
+**Project Structure:**
+
+```
+movie-sentiment-analyzer/
+├── app/
+│   ├── __init__.py           # Package init
+│   ├── main.py               # FastAPI routes, startup, CORS
+│   ├── model_loader.py       # Singleton model loader (loaded once at startup)
+│   ├── preprocessing.py      # clean_text → tokenize → pad_sequences
+│   └── schemas.py            # Pydantic request/response models
+├── models/
+│   ├── lstm_model.keras      # Trained LSTM (31 MB)
+│   ├── rnn_model.keras       # Trained SimpleRNN (30 MB)
+│   ├── tokenizer.pkl         # Keras Tokenizer — vocab 20K
+│   └── label_encoder.pkl     # LabelEncoder: 0→negative, 1→positive
+├── fastapi.ipynb             # Google Colab training notebook (T4 GPU)
+├── streamlit_app.py          # Streamlit frontend
+├── requirements.txt          # Python dependencies
+├── .gitignore
+└── README.md
+```
+
 ---
 
-## Quick Start
+## 🚀 Quick Start
 
 ### Prerequisites
 
@@ -102,7 +126,7 @@ Open **http://localhost:8501** in your browser.
 
 ---
 
-## API Reference
+## 📡 API Reference
 
 All endpoints return JSON. The API runs on `http://localhost:8000`.
 
@@ -174,7 +198,7 @@ All endpoints return JSON. The API runs on `http://localhost:8000`.
 
 ---
 
-## Model Performance
+## 📊 Model Performance
 
 ### LSTM (Recommended)
 
@@ -206,7 +230,7 @@ All endpoints return JSON. The API runs on `http://localhost:8000`.
 
 ---
 
-## Training Details
+## 🧠 Training Details
 
 The models were trained in **Google Colab** on an **NVIDIA T4 GPU** using TensorFlow 2.15.
 
@@ -251,31 +275,7 @@ Embedding(20000, 128, input_length=200)
 
 ---
 
-## Project Structure
-
-```
-movie-sentiment-analyzer/
-├── app/
-│   ├── __init__.py           # Package init
-│   ├── main.py               # FastAPI routes, startup, CORS
-│   ├── model_loader.py       # Singleton model loader (loaded once at startup)
-│   ├── preprocessing.py      # clean_text → tokenize → pad_sequences
-│   └── schemas.py            # Pydantic request/response models
-├── models/
-│   ├── lstm_model.keras      # Trained LSTM (31 MB)
-│   ├── rnn_model.keras       # Trained SimpleRNN (30 MB)
-│   ├── tokenizer.pkl         # Keras Tokenizer — vocab 20K
-│   └── label_encoder.pkl     # LabelEncoder: 0→negative, 1→positive
-├── fastapi.ipynb             # Google Colab training notebook (T4 GPU)
-├── streamlit_app.py          # Streamlit frontend
-├── requirements.txt          # Python dependencies
-├── .gitignore
-└── README.md
-```
-
----
-
-## Tech Stack
+## 🛠 Tech Stack
 
 | Layer | Technology |
 |---|---|
@@ -290,7 +290,7 @@ movie-sentiment-analyzer/
 
 ---
 
-## License
+## 📄 License
 
 This project is licensed under the **MIT License**.
 
