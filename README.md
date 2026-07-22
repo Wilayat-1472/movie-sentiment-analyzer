@@ -6,7 +6,7 @@
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.15%2B-FF6F00?logo=tensorflow&logoColor=white)](https://tensorflow.org)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-AI-powered sentiment analysis for movie reviews using LSTM and SimpleRNN deep learning models trained on the IMDB 50K dataset.
+AI-powered sentiment analysis for movie reviews using LSTM and SimpleRNN deep learning models trained on the IMDB 50K dataset via Google Colab (T4 GPU).
 
 ---
 
@@ -69,7 +69,7 @@ Sentiment Analyzer/
 │   ├── rnn_model.keras      # Trained SimpleRNN weights
 │   ├── tokenizer.pkl        # Keras Tokenizer (vocab=20K)
 │   └── label_encoder.pkl    # LabelEncoder (negative/positive)
-├── fastapi.ipynb            # Training notebook (Google Colab)
+├── fastapi.ipynb            # Google Colab training notebook (T4 GPU)
 ├── streamlit_app.py         # Streamlit frontend
 ├── requirements.txt         # Python dependencies
 └── .gitignore
@@ -233,6 +233,7 @@ The SimpleRNN model failed to learn meaningful patterns (~50% accuracy, equivale
 | **Batch Size** | 64 |
 | **Epochs** | 10 (early stopping via ModelCheckpoint) |
 | **Training Environment** | Google Colab (T4 GPU) |
+| **Notebook** | `fastapi.ipynb` — open in [Google Colab](https://colab.research.google.com/) |
 
 ### LSTM Architecture
 
@@ -257,6 +258,7 @@ Embedding(20000, 128, input_length=200)
 | **Text Processing** | NLTK, scikit-learn |
 | **Data Validation** | Pydantic |
 | **Format** | JSON via REST |
+| **Training Platform** | Google Colab (T4 GPU) |
 | **Environment** | Conda |
 
 ---
